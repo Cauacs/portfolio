@@ -7,6 +7,10 @@ module.exports = {
         base: "#191724",
         text: "#e0def4",
         rose: "#ea9a97",
+        overlay: "#26233a",
+        iris: "#c4a7e7",
+        pine: "#31748f",
+        love: "#eb6f92",
       },
       fontFamily: {
         text: ["JetBrains Mono"],
