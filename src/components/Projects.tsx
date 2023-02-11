@@ -74,10 +74,23 @@ export const Projects = () => {
         <ImageSlider slides={ergoUrls} />
       </div>
       <div className="w-[1000px] p-1 text-text">
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates
-        minima ab commodi inventore repellendus ducimus perspiciatis placeat
-        neque obcaecati, praesentium optio alias minus rerum et sint odit
-        reiciendis explicabo laboriosam.
+        Ergolist is web application that revives the old version of{" "}
+        <a
+          href="https://web.archive.org/web/20050206143858/http://www.labiutil.inf.ufsc.br/ergolist/"
+          className="text-pine"
+        >
+          Ergolist
+        </a>{" "}
+        developed by{" "}
+        <a
+          href="https://web.archive.org/web/20050206073849/http://www.labiutil.inf.ufsc.br/"
+          className="text-pine"
+        >
+          LabUtil
+        </a>
+        . The purpose of the application is to provide a checklist to help web
+        developers to create better UIs. It was developed by me and my
+        classmates from college.
       </div>
     </div>
   );
