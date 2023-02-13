@@ -2,27 +2,23 @@ import { Button } from "./Button";
 import { Card } from "./Card";
 import { ImageSlider } from "./ImageSlider";
 
-import { env } from "../env/client.mjs";
-
-const url = env.NEXT_PUBLIC_ROOT_URL;
-
 export const Projects = () => {
   const cfUrls = [
-    { url: url + "/cf-posts.png" },
-    { url: url + "cf-post.png" },
-    { url: url + "cf-signin.png" },
-    { url: url + "cf-signup.png" },
-    { url: url + "cf-urls.png" },
+    { url: "cf-posts.png" },
+    { url: "cf-post.png" },
+    { url: "cf-signin.png" },
+    { url: "cf-signup.png" },
+    { url: "cf-urls.png" },
   ];
 
-  const qnUrls = [{ url: url + "/qn-1.png" }, { url: url + "/qn-2.png" }];
+  const qnUrls = [{ url: "/qn-1.png" }, { url: "/qn-2.png" }];
 
   const ergoUrls = [
-    { url: url + "/ergo-checklist.jpeg" },
-    { url: url + "/ergo-aval.jpeg" },
-    { url: url + "/ergo-perguntas.jpeg" },
-    { url: url + "/ergo-cad.jpeg" },
-    { url: url + "/ergo-login.jpeg" },
+    { url: "/ergo-checklist.jpeg" },
+    { url: "/ergo-aval.jpeg" },
+    { url: "/ergo-perguntas.jpeg" },
+    { url: "/ergo-cad.jpeg" },
+    { url: "/ergo-login.jpeg" },
   ];
 
   return (
