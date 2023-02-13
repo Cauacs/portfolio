@@ -1,13 +1,7 @@
-export const Button = ({
-  onClick,
-  str,
-}: {
-  onClick?: () => void;
-  str: string;
-}) => {
+export const Button = ({ str, link }: { str: string; link: string }) => {
   return (
-    <span
-      onClick={onClick}
+    <a
+      href={link}
       className="mr-3 flex rounded bg-overlay p-2 text-text hover:cursor-pointer hover:bg-love hover:text-pine"
     >
       {/* <svg
@@ -35,6 +29,6 @@ export const Button = ({
       </svg>
 
       {str}
-    </span>
+    </a>
   );
 };

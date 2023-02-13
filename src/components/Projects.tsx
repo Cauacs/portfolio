@@ -31,24 +31,6 @@ export const Projects = () => {
       </span>
       <div>
         <div className="mt-5 h-[600px] w-[1000px]">
-          <ImageSlider slides={cfUrls} />
-        </div>
-        <div className="w-[1000px] p-1 text-text">
-          ComfyReader is a rss feed reader. It works by taking an url to an rss
-          feed an saving it to an user account.
-        </div>
-        <div className="flex flex-row-reverse">
-          <Card language="Java" color="overlay" />
-          <Card language="Spring Boot" color="overlay" />
-          <Card language="JavaScript" color="overlay" />
-          <Card language="ReactJS" color="overlay" />
-          <Card language="MongoDB" color="overlay" />
-          <Card language="REST" color="overlay" />
-          <Button str="Code" />
-        </div>
-      </div>
-      <div>
-        <div className="mt-5 h-[600px] w-[1000px]">
           <ImageSlider slides={qnUrls} />
         </div>
         <div className="w-[1000px] p-1 text-text">
@@ -66,10 +48,29 @@ export const Projects = () => {
           <Card language="Apollo" color="overlay" />
           <Card language="Prisma" color="overlay" />
           <Card language="NexusJS" color="overlay" />
-          <Button str="Code" />
-          <Button str="Live Demo" />
+          <Button str="Code" link="https://github.com/Cauacs/super-waffle" />
+          <Button str="Live Demo" link="https://quick-note-xi.vercel.app/" />
         </div>
       </div>
+      <div>
+        <div className="mt-5 h-[600px] w-[1000px]">
+          <ImageSlider slides={cfUrls} />
+        </div>
+        <div className="w-[1000px] p-1 text-text">
+          ComfyReader is a rss feed reader. It works by taking an url to an rss
+          feed an saving it to an user account.
+        </div>
+        <div className="flex flex-row-reverse">
+          <Card language="Java" color="overlay" />
+          <Card language="Spring Boot" color="overlay" />
+          <Card language="JavaScript" color="overlay" />
+          <Card language="ReactJS" color="overlay" />
+          <Card language="MongoDB" color="overlay" />
+          <Card language="REST" color="overlay" />
+          <Button str="Code" link="https://github.com/Cauacs/comfyreader" />
+        </div>
+      </div>
+
       <div className="mt-5 h-[600px] w-[1000px]">
         <ImageSlider slides={ergoUrls} />
       </div>
@@ -91,6 +92,19 @@ export const Projects = () => {
         . The purpose of the application is to provide a checklist to help web
         developers to create better UIs. It was developed by me and my
         classmates from college.
+      </div>
+      <div className="flex flex-row-reverse">
+        <Card language="JavaScript" color="overlay" />
+        <Card language="Express" color="overlay" />
+        <Card language="ReactJS" color="overlay" />
+        <Card language="REST" color="overlay" />
+        <Card language="MongoDB" color="overlay" />
+        <Card language="Mongoose" color="overlay" />
+        <Card language="JWT" color="overlay" />
+        <Button
+          str="Code"
+          link="https://github.com/FatecFranca/DSM-G06-PI3-2022-1"
+        />
       </div>
     </div>
   );
