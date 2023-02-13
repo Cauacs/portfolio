@@ -1,7 +1,12 @@
 export const Contact = () => {
   return (
     <div className="flex h-[30vh] items-center justify-center bg-base p-5 font-text">
-      <a href="mailto:cauasene00@hotmail.com" className="mx-2">
+      <a
+        href="mailto:cauasene00@hotmail.com"
+        className="mx-2"
+        target="_blank"
+        rel="noreferrer"
+      >
         <svg
           width="80px"
           height="80px"
@@ -32,6 +37,8 @@ export const Contact = () => {
       <a
         href="https://www.linkedin.com/in/cauã-sene-23a5b3143"
         className="mx-2"
+        target="_blank"
+        rel="noreferrer"
       >
         <svg
           width="80px"
@@ -46,7 +53,12 @@ export const Contact = () => {
           />
         </svg>
       </a>
-      <a href="https://github.com/Cauacs" className="mx-2">
+      <a
+        href="https://github.com/Cauacs"
+        className="mx-2"
+        target="_blank"
+        rel="noreferrer"
+      >
         <svg
           xmlns="http://www.w3.org/2000/svg"
           width="70px"

@@ -2,26 +2,27 @@ import { Button } from "./Button";
 import { Card } from "./Card";
 import { ImageSlider } from "./ImageSlider";
 
+import { env } from "../env/client.mjs";
+
+const url = env.NEXT_PUBLIC_ROOT_URL;
+
 export const Projects = () => {
   const cfUrls = [
-    { url: "http://localhost:3000/cf-posts.png" },
-    { url: "http://localhost:3000/cf-post.png" },
-    { url: "http://localhost:3000/cf-signup.png" },
-    { url: "http://localhost:3000/cf-signin.png" },
-    { url: "http://localhost:3000/cf-urls.png" },
+    { url: url + "/cf-posts.png" },
+    { url: url + "cf-post.png" },
+    { url: url + "cf-signin.png" },
+    { url: url + "cf-signup.png" },
+    { url: url + "cf-urls.png" },
   ];
 
-  const qnUrls = [
-    { url: "http://localhost:3000/qn-1.png" },
-    { url: "http://localhost:3000/qn-2.png" },
-  ];
+  const qnUrls = [{ url: url + "/qn-1.png" }, { url: url + "/qn-2.png" }];
 
   const ergoUrls = [
-    { url: "http://localhost:3000/ergo-checklist.jpeg" },
-    { url: "http://localhost:3000/ergo-aval.jpeg" },
-    { url: "http://localhost:3000/ergo-perguntas.jpeg" },
-    { url: "http://localhost:3000/ergo-cad.jpeg" },
-    { url: "http://localhost:3000/ergo-login.jpeg" },
+    { url: url + "/ergo-checklist.jpeg" },
+    { url: url + "/ergo-aval.jpeg" },
+    { url: url + "/ergo-perguntas.jpeg" },
+    { url: url + "/ergo-cad.jpeg" },
+    { url: url + "/ergo-login.jpeg" },
   ];
 
   return (
@@ -36,7 +37,12 @@ export const Projects = () => {
         <div className="w-[1000px] p-1 text-text">
           QuickNote is a minimalist WYSIWYG (What You See Is What You Get) rich
           text editor with shortcuts built with{" "}
-          <a href="https://docs.slatejs.org/" className="text-pine">
+          <a
+            href="https://docs.slatejs.org/"
+            className="text-pine"
+            target="_blank"
+            rel="noreferrer"
+          >
             <u>SlateJS</u>
           </a>
         </div>
@@ -79,6 +85,8 @@ export const Projects = () => {
         <a
           href="https://web.archive.org/web/20050206143858/http://www.labiutil.inf.ufsc.br/ergolist/"
           className="text-pine"
+          target="_blank"
+          rel="noreferrer"
         >
           Ergolist
         </a>{" "}
@@ -86,6 +94,8 @@ export const Projects = () => {
         <a
           href="https://web.archive.org/web/20050206073849/http://www.labiutil.inf.ufsc.br/"
           className="text-pine"
+          target="_blank"
+          rel="noopener noreferrer"
         >
           LabUtil
         </a>

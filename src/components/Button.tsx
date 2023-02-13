@@ -3,6 +3,8 @@ export const Button = ({ str, link }: { str: string; link: string }) => {
     <a
       href={link}
       className="mr-3 flex rounded bg-overlay p-2 text-text hover:cursor-pointer hover:bg-love hover:text-pine"
+      target="_blank"
+      rel="noreferrer"
     >
       {/* <svg
         xmlns="http://www.w3.org/2000/svg"
