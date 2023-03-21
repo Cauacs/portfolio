@@ -22,8 +22,8 @@ export const Projects = () => {
   ];
 
   const webServerUrls = [
-    { url: "/phpwbserver.jpg" },
-    { url: "/phpwbserver2.jpg" },
+    { url: "/phpwebserver.png" },
+    { url: "/phpwebserver2.png" },
   ];
 
   return (
