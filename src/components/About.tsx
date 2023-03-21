@@ -7,8 +7,9 @@ const languages = [
   "Java",
   "C/C++",
   "SQL",
+  "PHP",
 ];
-const frameworks = ["NextJS", "ReactJS", "Express", "Spring Boot"];
+const frameworks = ["NextJS", "ReactJS", "Express", "Spring Boot", "Laravel"];
 const tools = ["Git", "Docker", "NodeJS", "npm/yarn"];
 const standarts_paradigms = ["OpenAPI", "REST", "GraphQL", "gRPC/tRPC"];
 const snappy = ["Linux", "Emacs", "Vim/Neovim"];

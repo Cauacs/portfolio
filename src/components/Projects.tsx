@@ -21,6 +21,11 @@ export const Projects = () => {
     { url: "/ergo-login.jpeg" },
   ];
 
+  const webServerUrls = [
+    { url: "/phpwbserver.jpg" },
+    { url: "/phpwbserver2.jpg" },
+  ];
+
   return (
     <div className="flex flex-grow flex-col items-center justify-center bg-base py-10 font-text">
       <span className="mb-20 text-4xl text-text">
@@ -111,6 +116,33 @@ export const Projects = () => {
           str="Code"
           link="https://github.com/FatecFranca/DSM-G06-PI3-2022-1"
         />
+      </div>
+
+      <div>
+        <div className="mt-5 h-[600px] w-[1000px]">
+          <ImageSlider slides={webServerUrls} />
+        </div>
+        <div className="w-[1000px] p-1 text-text">
+          A simple HTTP 1.1 web server written in pure PHP. It has a simple
+          router that let you match uri patterns with functions, and a simple
+          cache system using{" "}
+          <a
+            href="https://redis.io/"
+            className="text-pine"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Redis
+          </a>
+        </div>
+        <div className="flex flex-row-reverse">
+          <Card language="PHP" color="overlay" />
+          <Card language="Redis" color="overlay" />
+          <Button
+            str="Code"
+            link="https://github.com/Cauacs/Web-server-in-php"
+          />
+        </div>
       </div>
     </div>
   );
